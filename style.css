@@ -1,0 +1,40 @@
+body {
+  text-align: center;
+  font-family: Arial;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+}
+
+.grid {
+  width: 320px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hole {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  background: #111;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.mole {
+  background: url("https://i.imgur.com/OdL0XPt.png") center/cover no-repeat;
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+
+button, select {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+}
